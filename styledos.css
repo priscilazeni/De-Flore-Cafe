@@ -1,0 +1,207 @@
+/*inicio index*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(antiquewhite, lightblue, antiquewhite);
+    font-family: tahoma;
+}
+
+body header {
+    height: 400px;
+}
+
+body header h1 {
+    text-align: center;
+    font-size: 100px;
+    font-family: Pacifico;
+    text-decoration: underline #c8677f;
+    height: 150px;
+    padding: 10px;
+    transform: translateY(100px);
+}
+
+
+body header nav {
+    text-align: center;    
+    margin-top: 70px;
+}
+
+body header nav ul li {
+    transform: translate(-550px, -200px);
+    padding: 1.5%;
+    font-family: tahoma;
+    font-size: 15px;
+}
+
+body header nav ul li a {
+    text-decoration: none;
+    padding: 1%;
+    color: black;
+    background-color: #a9aae8;
+    border-radius: 20px 20px 20px 20px;
+}
+
+body header nav ul li a:hover {
+    font-size: 18px;
+}
+
+body .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 700px 1000px 800px;
+}
+
+body .grid {
+    width: 100%;
+}
+
+body main .grid div {
+    margin-top: 50px;
+}
+
+body main .grid div h2 {
+    color: #a9aae8;
+    font-size: 60px;
+    padding: 5px;
+    transform: translate(80px, 30px);
+}
+
+body main .grid div p {
+    width: 500px;
+    font-size: 20px;
+    display: flex;
+    text-align: justify;
+    padding: 5px;
+    transform: translate(350px, -120px);
+    background-color: antiquewhite;
+}
+
+body .grid section .gusto img {
+    width: 40%;
+    height: auto;
+    margin-left: 10px;
+    transform: translate(20px,-30px);
+}
+
+body .grid section .gustoDos img {
+    width: 40%;
+    height: auto;
+    transform: translate(570px, -370px);
+}
+
+body .grid .regala img {
+    width: 35%;
+    height: auto;
+    transform: translate(120px, -20px);
+}
+
+body .grid .regalaDos img {
+    width: 35%;
+    height: auto;
+    transform: translate(600px, -580px);
+}
+
+body .grid section .local img {
+    width: 50%;
+    height: auto;
+    transform: translate(300px);
+}
+
+body .grid section div h2 {
+    color: #c8677f;
+    font-size: 60px;
+    padding: 5px;
+    transform: translate(80px, 30px);
+}
+
+body .grid section div p {
+    width: 600px;
+    font-size: 20px;
+    display: flex;
+    text-align: justify;
+    padding: 5px;
+    transform: translate(350px, -150px);
+}
+
+body .grid section div .localDos {
+    width: 600px;
+    font-size: 20px;
+    text-align: justify;
+    padding: 5px;
+    transform: translate(350px, -90px);
+
+}
+
+body main section .local img {
+    width: 60%;
+    height: auto;
+    transform: translate(250px);
+}
+
+
+
+footer div .terminos {
+    display: block;
+    color: black;
+    text-decoration: none;
+    transform: translate(40px, 30px);
+    padding: 5px;
+}
+
+footer img {
+    width: 4%;
+    transform: translate(550px, -40px);
+}
+
+footer .copy {
+    transform: translate(900px, -70px);
+}
+
+/* inicio menu */
+
+body .menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 500px 50px 700px 50px 40px 800px 50px 600px ;
+}
+
+body .menu h3 {
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    color: #c8677f;
+    text-decoration: underline;
+}
+
+body .menu h4 {
+    text-align: center;
+}
+
+body .menu ul li {
+    font-style: italic;
+    font-size: 20px;
+    padding: 5px;
+
+}
+
+body .menu ul p {
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+/* inicio eventos */
+
+body p {
+    width: 70%;
+    font-size: 20px;
+    transform: translateX(150px);
+}
+
+
+

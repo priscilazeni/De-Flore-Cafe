@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: tahoma;
+}
+
+body h1 {
+    text-align: center;
+    font-size:70px;
+    font-family: Pacifico;
+    text-decoration: underline #a9aae8;
+    background-color: antiquewhite;
+    height: 150px;
+    padding: 10px;
+}
+
+
+body header nav {
+    text-align: center;    
+    margin-top: 70px;
+}
+
+body header nav ul li {
+    display: inline;
+    padding: 1.5%;
+    font-family: tahoma;
+    font-size: 18px;
+}
+
+body header nav ul li a {
+    text-decoration: none;
+    padding: 1%;
+    color: black;
+    background-color: #c8677f;
+    border-radius: 20px 20px 20px 20px;
+}
+
+body header nav ul li a:hover {
+    background-color:#a9aae8;
+}
+
+body .grid {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 300px 400px;
+}
+
+body main section div h2 {
+    font-size: 50px;
+    padding-top: 15%;
+    margin-left: 10%;
+    color: #a9aae8;
+    width: 15%;    
+}
+
+body main section div p {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+body section div p {
+    text-align: center;
+    font-family: tahoma;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+body section .local img {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+
+footer img {
+    width: 4%;  
+    margin-bottom: 40px;
+    margin-top: -90px;
+    padding: 1%;
+    background-color: antiquewhite;
+}
+
+footer {
+    text-align: center;
+    background-color: antiquewhite;
+    height: 100px;
+}
+
+footer .terminos {
+    display: block;
+    text-align: left;
+    font-family: tahoma;
+    font-size: 15px;
+    padding: 0.5%;
+    margin-left: 10%;
+}
+
+footer .terminos {
+    text-decoration: none;
+    color: black;
+}
+
+footer .copy {
+    text-align: right;
+    font-family: tahoma;
+    font-size: 15px;
+    margin-bottom: 100px;
+    margin-top: -85px;
+    margin-right: 10%;
+    background-color: antiquewhite;
+}
+
+form {
+    padding: 60px;
+    max-width: 600px;
+    background-color: antiquewhite;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+form input, form textarea, form select {
+    margin-bottom: 15px;
+    font-family: tahoma;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; 
+    border: none; 
+    color: #525c66; 
+    font-size: 1em;
+    resize: none; 
+}
+
+body section div .tostas {
+    margin-top: 15%;
+    font-family: Pacifico;
+    background-color: antiquewhite;
+    font-size: 25px;
+    padding: 1%;
+    margin-bottom: 5%;
+    margin-top: 7%;
+}
+
+body .deFloreDos div ul li {
+    padding-top: 2%;
+    margin-left: 1%;
+    font-family: tahoma;
+    font-size: 20px;
+    color: #a9aae8;
+    text-decoration: underline;
+    font-weight: bold;  
+}
+
+body .deFloreDos div ul p {
+    font-family: tahoma;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+
+body .torta p {
+    font-family: tahoma;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background-color: antiquewhite;
+    padding: 2%;
+}
+
+body .slider {
+    width: 100%;
+    height: 600%;
+    overflow: hidden;
+}
+
+body .slider ul {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 100%;
+}
+
+body .slider ul li {
+    width: 100%;
+    list-style: none;
+}
+
+body .slider ul li img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5px;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+body section .nos {
+    font-family: tahoma;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15%;
+    background-color:antiquewhite;
+    padding: 1%;
+    margin-bottom: 5%;
+    margin-top: 7%;
+}
+
+body section div img {
+    width: 50%;
+    margin-left: 23%;
+    margin-top: 5%;
+}
