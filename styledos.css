@@ -7,14 +7,17 @@
 }
 
 body {
-    background: linear-gradient(antiquewhite, lightblue, antiquewhite);
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(lightblue, antiquewhite, lightblue);
     font-family: tahoma;
 }
 
 body header {
     height: 400px;
 }
-
 body header h1 {
     text-align: center;
     font-size: 100px;
@@ -25,115 +28,91 @@ body header h1 {
     transform: translateY(100px);
 }
 
+body nav {
+    width: auto;
+    height: 50px;
 
-body header nav {
-    text-align: center;    
-    margin-top: 70px;
+}
+
+body header nav ul {
+    transform: translate(50px, 10px);
+  
 }
 
 body header nav ul li {
-    transform: translate(-550px, -200px);
-    padding: 1.5%;
-    font-family: tahoma;
-    font-size: 15px;
+    font-size: 20px;
+    display: inline;
+    padding: 6px;
+   
 }
 
 body header nav ul li a {
     text-decoration: none;
-    padding: 1%;
     color: black;
-    background-color: #a9aae8;
-    border-radius: 20px 20px 20px 20px;
+
 }
 
 body header nav ul li a:hover {
-    font-size: 18px;
+    color:antiquewhite;
 }
+
 
 body .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 700px 1000px 800px;
+    grid-template-rows: 750px 950px 800px 50px;
 }
 
-body .grid {
-    width: 100%;
-}
-
-body main .grid div {
-    margin-top: 50px;
-}
-
-body main .grid div h2 {
+body .grid section div h2 {
     color: #a9aae8;
     font-size: 60px;
     padding: 5px;
-    transform: translate(80px, 30px);
+    transform: translate(250px, 50px);
+    
 }
 
-body main .grid div p {
+body .grid section div p {
     width: 500px;
     font-size: 20px;
     display: flex;
     text-align: justify;
     padding: 5px;
-    transform: translate(350px, -120px);
-    background-color: antiquewhite;
+    transform: translate(550px, -120px);
 }
 
 body .grid section .gusto img {
     width: 40%;
     height: auto;
-    margin-left: 10px;
-    transform: translate(20px,-30px);
+    transform: translateX(60px);
 }
+
 
 body .grid section .gustoDos img {
     width: 40%;
     height: auto;
-    transform: translate(570px, -370px);
+    transform: translate(700px, -335px);
 }
+
 
 body .grid .regala img {
     width: 35%;
     height: auto;
-    transform: translate(120px, -20px);
+    transform: translate(140px, -1px);
 }
 
 body .grid .regalaDos img {
     width: 35%;
     height: auto;
-    transform: translate(600px, -580px);
+    transform: translate(700px, -559px);
 }
 
-body .grid section .local img {
-    width: 50%;
-    height: auto;
-    transform: translate(300px);
-}
 
-body .grid section div h2 {
-    color: #c8677f;
-    font-size: 60px;
-    padding: 5px;
-    transform: translate(80px, 30px);
-}
-
-body .grid section div p {
-    width: 600px;
-    font-size: 20px;
-    display: flex;
-    text-align: justify;
-    padding: 5px;
-    transform: translate(350px, -150px);
-}
-
-body .grid section div .localDos {
+body .grid section div .nuestro {
     width: 600px;
     font-size: 20px;
     text-align: justify;
     padding: 5px;
-    transform: translate(350px, -90px);
+    transform: translate(600px, -80px);
 
 }
 
@@ -142,8 +121,6 @@ body main section .local img {
     height: auto;
     transform: translate(250px);
 }
-
-
 
 footer div .terminos {
     display: block;
@@ -160,6 +137,10 @@ footer img {
 
 footer .copy {
     transform: translate(900px, -70px);
+}
+
+footer div .terminos:hover {
+    color:antiquewhite;
 }
 
 /* inicio menu */
@@ -197,11 +178,61 @@ body .menu ul p {
 
 /* inicio eventos */
 
-body p {
-    width: 70%;
+body h3 {
     font-size: 20px;
-    transform: translateX(150px);
+    margin-bottom: 100px;
+    text-align: center;
 }
 
+body .grid-dos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px 550px;
+}
 
+body .grid-dos div p {
+    font-size: 15px;
+}
 
+body .grid-dos div .cupcake {
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    transform: translate(60px, 50px);
+    
+}
+
+body .grid-dos div .frutillas {
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    transform: translate(130px, 20px);
+    
+}
+
+body .grid-dos div .galletita {
+    width: 75%;
+    height: auto;
+    border-radius: 20px;
+    transform: translate(60px, 80px);
+}
+
+body .grid-dos div .macarrons {
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    transform: translate(130px, 80px);
+}
+
+body .grid-dos div .torta {
+    width: 75%;
+    height: auto;
+    border-radius: 20px;
+    transform: translateX(400px);
+    margin-bottom: 100px;
+}
+
+body .grid-dos div .tortaDos {
+    text-align: center;
+    transform: translateX(300px);
+}
