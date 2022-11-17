@@ -6,64 +6,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>De Flore Cafe</title>
-    <link rel="stylesheet" href="../style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styledos.css">
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&family=Dancing+Script:wght@600&family=Montserrat:ital,wght@1,200&family=Open+Sans:ital@1&family=Pacifico&family=Raleway:wght@200&family=Roboto:ital,wght@0,300;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&family=Dancing+Script:wght@600&family=Jost:wght@300&family=Montserrat:ital,wght@1,200&family=Open+Sans:ital@1&family=Pacifico&family=Raleway:wght@200&family=Roboto:ital,wght@0,300;1,400&display=swap"
         rel="stylesheet">
-        <link rel="shortcut icon" href="../multimedia/flor.webp">
+    <!-- Logo en el buscador -->
+    <link rel="shortcut icon" href="../multimedia/logo.png">
+
 </head>
 
 <body>
 
-    <h1>Contactanos</h1>
+    <nav>
+        <input class="input-menu" type="checkbox" id="menu">
+        <label class="menu" for="menu"> ☰ </label>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/menu.html">Menu</a></li>
+            <li><a href="../pages/eventos.html">Regala De Flore</a></li>
+            <li><a href="../pages/nosotros.html">Nosotros</a></li>
+            <li><a href="../pages/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
 
-    <header>
-        
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/menu.html">De Flore Menu</a></li>
-                <li><a href="../pages/eventos.html">De Flore Eventos</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <h3>Para reservas o pedidos llena el formulario y nos pondremos en contacto</h3>
 
-    </header>
+    <div class="contact_form">
 
-    <section>
+        <form action="submeter-formulario.php" method="post">
 
-        <form action="">
+            <p class="secciones-form">
+                <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                </label>
+                <input class="input2" type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                    placeholder="Escribe tu nombre">
+            </p>
 
-            <label for="nombre"></label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <p class="secciones-form">
+                <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                </label>
+                <input class="input2" type="email" name="introducir_email" id="email" required="obligatorio"
+                    placeholder="Escribe tu Email">
+            </p>
 
-            <label for="correo"></label>
-            <input type="email" name="correo" id="correo" placeholder="Correo electronico">
+            <p class="secciones-form">
+                <label for="telefone" class="colocar_telefono">Teléfono
+                </label>
+                <input class="input2" type="tel" name="introducir_telefono" id="telefono"
+                    placeholder="Escribe tu teléfono">
+            </p>
 
-            <label for="numero"></label>
-            <input type="text" name="numero" id="numero" placeholder="Telefono">
+            <p class="secciones-form">
+                <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                </label>
+                <input class="input2" type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                    placeholder="Escribe un asunto">
+            </p>
 
-            <select name="formulario" id="formulario">
+            <p class="secciones-form">
+                <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                </label>
+                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                    placeholder="Deja tu comentario ..."></textarea>
+            </p>
 
-                <option value="Reservas">Reservas</option>
-                <option value="Pedidos">Pedidos</option>
+            <button class="button-send" type="submit" name="enviar_formulario" id="enviar">
+                <p class="text-button">Enviar</p>
+            </button>
 
-            </select>
-
-            <label for="comentario"></label>
-            <textarea name="comentario" id="comentario" cols="70" rows="10"></textarea>
-
-            <label for="enviar"></label>
-            <input type="submit" name="enviar" id="enviar">
+            <p class="aviso">
+                <span class="obligatorio"> * </span>los campos son obligatorios.
+            </p>
 
         </form>
+    </div>
+    </div>
 
-    </section>
+    <div class="grid-cuatro">
 
-    <footer>
+        <div>
+            <p>Horario de atencion</p>
+            <p>Lunes a Domingos de 7:00 am a 20:00 pm</p>
+        </div>
+
+        <div>
+            <p>Seguimos en nuestras redes sociales</p>
+            <a href=""><img src="../multimedia/logo-face.png" alt="logo-face"></a>
+            <a href=""><img src="../multimedia/logo-instagram.png" alt="logo-instagram"></a>
+        </div>
+
+        <div>
+
+            <p>Dejanos tus datos y postulate a las busquedas activas</p>
+
+            <p>
+                <a href="">Forma parte del equipo De Flore</a>
+            </p>
+            
+        </div>
+
+    </div>
+
+    <footer class="grid-footer">
 
         <div>
             <a class="terminos" href="">Terminos y Condiciones</a>
@@ -71,13 +123,26 @@
             <a class="terminos" href="">Politicas de Privacidad</a>
         </div>
 
-        <img src="../multimedia/logo-face.png" alt="face">
+        <div class="form">
 
-        <img src="../multimedia/logo-instagram.png" alt="insta">
+            <p><strong>Suscribite y recibi todas las novedades</strong></p>
 
-        <p class="copy">&copy; De Flore Cafe 2022</p>
+            <form action="">
+                <input type="email" name="suscribite" id="suscribite" placeholder="Ingresa tu email">
+                <label for="suscribite"></label>
+
+                <button type="submit">Suscribite</button>
+            </form>
+
+        </div>
+
+        <div>
+            <p class="copy">&copy; De Flore Cafe 2022</p>
+        </div>
 
     </footer>
+
+
 
 </body>
 

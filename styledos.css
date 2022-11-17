@@ -6,141 +6,205 @@
     box-sizing: border-box;
 }
 
+
 body {
+    background: linear-gradient(pink, antiquewhite, pink);
+    font-family: Jost;
     overflow-x: hidden;
 }
 
-body {
-    background: linear-gradient(lightblue, antiquewhite, lightblue);
-    font-family: tahoma;
-}
 
-body header {
-    height: 400px;
+ul {
+    display: none;
 }
-body header h1 {
-    text-align: center;
-    font-size: 100px;
-    font-family: Pacifico;
-    text-decoration: underline #c8677f;
-    height: 150px;
-    padding: 10px;
-    transform: translateY(100px);
-}
-
-body nav {
-    width: auto;
-    height: 50px;
-
-}
-
-body header nav ul {
-    transform: translate(50px, 10px);
   
+  input:checked  ~ ul {
+    display:block;
 }
-
-body header nav ul li {
-    font-size: 20px;
-    display: inline;
-    padding: 6px;
-   
+  
+  .input-menu {
+    display: none;
 }
+  
+  .menu {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 7px;
+    width: 60px;
+    height: 40px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+  
+  
+  /* Estilo del boton cuando el menú está expandido*/
 
-body header nav ul li a {
+  input:checked ~ label {
+    background-color: antiquewhite; 
+}
+  
+  ul {
+    margin-top:0;
+    padding: 0;
+    width: 200px;
+}
+  
+  
+  li {
+    display: block;
+    background: antiquewhite;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 3px solid white;
+}
+  
+  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+
+  li:hover {
+    filter: brightness(110%);
+  }
+
+
+  a {
     text-decoration: none;
     color: black;
-
-}
-
-body header nav ul li a:hover {
-    color:antiquewhite;
-}
+  }
 
 
 body .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 750px 950px 800px 50px;
+    grid-template-rows: 750px 950px 830px;
 }
 
 body .grid section div h2 {
     color: #a9aae8;
     font-size: 60px;
     padding: 5px;
-    transform: translate(250px, 50px);
-    
+    transform: translate(200px, -40px);
 }
+
 
 body .grid section div p {
     width: 500px;
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
-    text-align: justify;
+    text-align: center;
     padding: 5px;
-    transform: translate(550px, -120px);
+    transform: translate(650px, -230px);
+    background-color: lightsteelblue;
+    border-radius: 10px;
 }
 
 body .grid section .gusto img {
     width: 40%;
     height: auto;
-    transform: translateX(60px);
+    border-radius: 20px;
+    transform: translate(100px, -80px);
 }
 
 
 body .grid section .gustoDos img {
     width: 40%;
     height: auto;
-    transform: translate(700px, -335px);
+    border-radius: 20px;
+    transform: translate(650px, -420px);
 }
 
 
 body .grid .regala img {
     width: 35%;
     height: auto;
-    transform: translate(140px, -1px);
+    border-radius: 20px;
+    transform: translate(170px, -90px);
 }
 
 body .grid .regalaDos img {
     width: 35%;
     height: auto;
-    transform: translate(700px, -559px);
+    border-radius: 20px;
+    transform: translate(680px, -650px);
 }
 
 
 body .grid section div .nuestro {
     width: 600px;
-    font-size: 20px;
-    text-align: justify;
+    font-size: 25px;
+    text-align: center;
     padding: 5px;
-    transform: translate(600px, -80px);
+    transform: translate(500px, -160px);
 
 }
 
 body main section .local img {
     width: 60%;
     height: auto;
-    transform: translate(250px);
+    border-radius: 20px;
+    transform: translate(250px, -50px);
 }
 
-footer div .terminos {
+body .grid-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 180px;
+}
+
+.grid-footer {
+  background-color: antiquewhite;
+}
+
+.grid-footer div .terminos {
     display: block;
     color: black;
     text-decoration: none;
-    transform: translate(40px, 30px);
     padding: 5px;
+    transform: translate(100px, 40px);
 }
 
-footer img {
-    width: 4%;
-    transform: translate(550px, -40px);
+.grid-footer .form {
+    width: 100%;
+    height: auto;
 }
 
-footer .copy {
-    transform: translate(900px, -70px);
+.grid-footer .form p {
+  transform: translate(70px, 50px);
+  color: #a9aae8;
 }
 
-footer div .terminos:hover {
-    color:antiquewhite;
+.grid-footer .form form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  transform: translate(70px, 60px);
+}
+
+.grid-footer .form input {
+  border-radius: 5px;
+  border-color: lightgray;
+  width: 50%;
+  height: 30px;
+}
+
+.grid-footer .form button {
+  border-radius: 5px;
+  border-color: antiquewhite;
+  background-color;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.copy {
+    transform: translate(80px, 70px);
+}
+
+.grid-footer div .terminos:hover {
+    color:#a9aae8;
 }
 
 /* inicio menu */
@@ -151,88 +215,233 @@ body .menu {
     grid-template-rows: 50px 500px 50px 700px 50px 40px 800px 50px 600px ;
 }
 
-body .menu h3 {
-    font-style: italic;
-    text-align: center;
-    font-size: 30px;
-    color: #c8677f;
-    text-decoration: underline;
-}
-
-body .menu h4 {
-    text-align: center;
-}
-
-body .menu ul li {
-    font-style: italic;
-    font-size: 20px;
-    padding: 5px;
-
-}
-
-body .menu ul p {
-    padding: 10px;
-    font-size: 15px;
-    margin-left: 10px;
-}
-
 /* inicio eventos */
 
 body h3 {
-    font-size: 20px;
-    margin-bottom: 100px;
+    font-size: 40px;
     text-align: center;
+    color: #a9aae8;
+    width: 80%;
+    margin-left: 140px;
+    margin-top: 50px;
 }
 
 body .grid-dos {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 600px 550px;
+    grid-template-rows: 650px 630px 600px;
 }
 
 body .grid-dos div p {
     font-size: 15px;
-}
-
-body .grid-dos div .cupcake {
-    width: 60%;
-    height: auto;
-    border-radius: 20px;
-    transform: translate(60px, 50px);
-    
-}
-
-body .grid-dos div .frutillas {
-    width: 60%;
-    height: auto;
-    border-radius: 20px;
-    transform: translate(130px, 20px);
-    
-}
-
-body .grid-dos div .galletita {
-    width: 75%;
-    height: auto;
-    border-radius: 20px;
-    transform: translate(60px, 80px);
-}
-
-body .grid-dos div .macarrons {
-    width: 60%;
-    height: auto;
-    border-radius: 20px;
-    transform: translate(130px, 80px);
-}
-
-body .grid-dos div .torta {
-    width: 75%;
-    height: auto;
-    border-radius: 20px;
-    transform: translateX(400px);
-    margin-bottom: 100px;
-}
-
-body .grid-dos div .tortaDos {
     text-align: center;
-    transform: translateX(300px);
+    transform: translateX(150px);
+    background-color: lightsteelblue;
+    border-radius: 10px;
 }
+
+body .grid-dos div {
+    position: relative;
+    float: left;
+    height: 290px;
+    width: 290px;
+    margin: 50px 20px;
+}
+
+body .grid-dos div img {
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    transition: opacity 1.5s ease-in-out;
+    width: 100%;
+    height: auto;
+    transform: translate(150px, 40px);
+  }
+
+  body .grid-dos div .cambio:hover {
+    opacity: 0;
+  }
+
+  /* inicio nosotros */
+
+ body .grid-dos div p {
+    font-size: 20px;
+ } 
+
+ body .nos .marcar {
+    color: #a9aae8;
+    font-size: 30px;
+ } 
+
+ body .nos {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    width: 90%;
+    margin-left: 70px;
+ } 
+
+ body section #carouselExampleSlidesOnly {
+    margin-top: 100px;
+    transform: translateX(300px);
+    margin-bottom: 100px;
+ }
+
+ body section #carouselExampleSlidesOnly img {
+    border-radius: 20px;
+ }
+
+ body .nosDos {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 50px;
+ }
+
+ body h4 {
+    margin-top: 100px;
+    text-align: center;
+    color: #a9aae8;
+    font-size: 35px;
+ }
+
+ body .grid-tres {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+ }
+
+ body .grid-tres div .sucursal {
+    font-size: 25px;
+    margin-top: 70px;
+    text-align: center;
+ }
+
+ body .grid-tres div p {
+    text-align: center;
+    font-size: 20px;
+ }
+
+ /* inicio contacto */
+
+ body h3 {
+    font-size: 60px;
+    transform: translateY(-50px);
+ }
+
+ .contact_form{  
+    width: 470px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px; 
+    transform: translateY(-70px);
+  }
+  
+  
+  .input2{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: pink; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  .texto_mensaje {
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: pink; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  
+  .button-send{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: pink; 
+    border-color: pink; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  
+  
+  .text-button {
+    color: #fff; 
+  }
+  
+  
+  .aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+  }
+  
+  
+  .secciones-form {
+    font-size: 18px; 
+    color: #0e0e0e; 
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  body .grid-cuatro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+  }
+
+  body .grid-cuatro div p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  body .grid-cuatro div img {
+    width: 10%;
+    margin-top: 20px;
+    transform: translateX(170px);
+    padding: 5px;
+  }
+
+  body .grid-cuatro div p a:hover {
+    color: #a9aae8;
+  }
+
+  body .grid-cuatro div a img:hover {
+    width: 14%;
+  }

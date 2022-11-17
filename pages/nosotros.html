@@ -5,61 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De Flore Cafe</title>
-    <link rel="stylesheet" href="../style.css">
+    <!--Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&family=Dancing+Script:wght@600&family=Montserrat:ital,wght@1,200&family=Open+Sans:ital@1&family=Pacifico&family=Raleway:wght@200&family=Roboto:ital,wght@0,300;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&family=Dancing+Script:wght@600&family=Jost:wght@300&family=Montserrat:ital,wght@1,200&family=Open+Sans:ital@1&family=Pacifico&family=Raleway:wght@200&family=Roboto:ital,wght@0,300;1,400&display=swap"
         rel="stylesheet">
-        <link rel="shortcut icon" href="../multimedia/flor.webp">
+    <!-- CSS bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- CSS --> 
+        <link rel="stylesheet" href="../styledos.css">
+         <!-- Logo en el buscador -->
+        <link rel="shortcut icon" href="../multimedia/logo.png">
 </head>
+
 <body>
 
-    <h1>Somos De Flore</h1>
+    <nav>
+        <input class="input-menu" type="checkbox" id="menu">
+        <label class="menu" for="menu"> ☰ </label>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/menu.html">Menu</a></li>
+            <li><a href="../pages/eventos.html">Regala De Flore</a></li>
+            <li><a href="../pages/nosotros.html">Nosotros</a></li>
+            <li><a href="../pages/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
 
-    <header>
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/menu.html">De Flore Menu</a></li>
-                <li><a href="../pages/eventos.html">De Flore Eventos</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-    </header>
+    <p class="nos">Nuestro cafe nace como un proyecto de cuatro amigas amantes de la pasteleria, la cocina y el diseño. En el año 2009 empezamos a vender tortas y ya soñabamos con tener nuestro propio espacio, nuestra marca. Así fue como <strong class="marcar">“De Flore”</strong>empezó a tomar forma y a crecer exponencialmente. 
+    </p>
 
     <section>
 
-        <p class="nos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem veniam praesentium, fugit nisi at accusantium voluptate quia distinctio architecto perferendis cupiditate aperiam, exercitationem, delectus voluptates quaerat asperiores quae unde magni.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem vitae animi ipsa quidem, quod distinctio sint unde doloremque quisquam, hic cum qui? Expedita, laudantium quibusdam quas eligendi minus pariatur vero!
-        </p>
-   
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../multimedia/gente.jpg" class="d-block w-50" alt="personas">
+                </div>
+                <div class="carousel-item">
+                    <img src="../multimedia/jovenes-dos.png" class="d-block w-50" alt="personas">
+                </div>
+                <div class="carousel-item">
+                    <img src="../multimedia/jovenes-tres.png" class="d-block w-50" alt="personas">
+                </div>
+                <div class="carousel-item">
+                    <img src="../multimedia/jovenes-uno.png" class="d-block w-50" alt="personas">
+                </div>
+            </div>
+        </div>
 
-    <div>
-        <img src="../multimedia/nosotros.gif" alt="nosotros">
-    </div>
+    </section>
 
-</section>
+    <p class="nosDos">Los recibimos como en casa y los agasajamos. Hacemos Magia, para consentirlos y darle todos los gustos. Los mimamos para que se sientan especiales y se lleven un momento memorable. Ofrecemos un menú variado y nuestros platos son ricos y abundantes. Somos creativos y sorprendemos! Creamos conceptos y recetas auténticas que distinguen a nuestra marca y la conviertenen una referencia que inspira e influye a los demás.</p>
 
-<footer>
+    <h4><strong>Visita cualquiera de nuestra sucursales</strong></h4>
 
-    <div>
-        <a class="terminos" href="">Terminos y Condiciones</a>
-        <a class="terminos" href="">Politicas de Reembolso</a>
-        <a class="terminos" href="">Politicas de Privacidad</a>
-    </div>
+    <section class="grid-tres">
 
-        <img src="../multimedia/logo-face.png" alt="face">
+        <div>
+            <p class="sucursal">De Flore Palermo</p>
+            <p>Costa Rica 2500</p>
+        </div>
 
-        <img src="../multimedia/logo-instagram.png" alt="insta">
+        <div>
+            <p class="sucursal">De Flore Recoleta</p>
+            <p>Av. Marcelo T. de Alvear 3700</p>
+        </div>
 
-        <p class="copy">&copy; De Flore Cafe 2022</p>
+        <div>
+            <p class="sucursal">De Flore Libertador</p>
+            <p>Av. Del Libertador 17200</p>
+        </div>
 
-</footer>
+    </section>
 
-    
+
+    <footer class="grid-footer">
+
+        <div>
+            <a class="terminos" href="">Terminos y Condiciones</a>
+            <a class="terminos" href="">Politicas de Reembolso</a>
+            <a class="terminos" href="">Politicas de Privacidad</a>
+        </div>
+
+        <div class="form">
+
+            <p><strong>Suscribite y recibi todas las novedades</strong></p>
+
+            <form action="">
+                <input type="email" name="suscribite" id="suscribite" placeholder="Ingresa tu email">
+                <label for="suscribite"></label>
+
+                <button type="submit">Suscribite</button>
+            </form>
+
+        </div>
+
+        <div>
+            <p class="copy">&copy; De Flore Cafe 2022</p>
+        </div>
+
+    </footer>
+
+    <!-- JavaScript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
