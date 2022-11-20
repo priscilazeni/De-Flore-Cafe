@@ -1,231 +1,578 @@
+/*inicio index*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body {
-    background-color: whitesmoke;
-    font-family: tahoma;
+    background: linear-gradient(pink, antiquewhite, pink);
+    font-family: Jost;
+    overflow-x: hidden;
 }
 
-body h1 {
+
+ul {
+    display: none;
+}
+  
+  input:checked  ~ ul {
+    display:block;
+}
+  
+  .input-menu {
+    display: none;
+}
+  
+  .menu {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 7px;
+    width: 60px;
+    height: 40px;
+    line-height: 30px;
+    font-weight: bold;
     text-align: center;
-    font-size:70px;
-    font-family: Pacifico;
-    text-decoration: underline #a9aae8;
-    background-color: antiquewhite;
-    height: 150px;
-    padding: 10px;
+    user-select: none;
+    margin-top: 10px;
+    margin-left: 10px;
 }
+  
+  
+  /* Estilo del boton cuando el menú está expandido*/
 
-
-body header nav {
-    text-align: center;    
-    margin-top: 70px;
+  input:checked ~ label {
+    background-color: antiquewhite; 
 }
-
-body header nav ul li {
-    display: inline;
-    padding: 1.5%;
-    font-family: tahoma;
-    font-size: 18px;
+  
+  ul {
+    margin-top:0;
+    padding: 0;
+    width: 200px;
 }
-
-body header nav ul li a {
-    text-decoration: none;
-    padding: 1%;
-    color: black;
-    background-color: #c8677f;
-    border-radius: 20px 20px 20px 20px;
-}
-
-body header nav ul li a:hover {
-    background-color:#a9aae8;
-}
-
-body .grid {
-    display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 300px 400px;
-}
-
-body main section div h2 {
-    font-size: 50px;
-    padding-top: 15%;
-    margin-left: 10%;
-    color: #a9aae8;
-    width: 15%;    
-}
-
-body main section div p {
-    font-size: 20px;
-    text-align: center;
-}
-
-
-body section div p {
-    text-align: center;
-    font-family: tahoma;
-    font-size: 20px;
-    margin-top: 5%;
-}
-
-body section .local img {
-    width: 50%;
-    margin-top: 5%;
-    margin-left: 15%;
-    margin-bottom: 5%;
-}
-
-footer img {
-    width: 4%;  
-    margin-bottom: 40px;
-    margin-top: -90px;
-    padding: 1%;
-    background-color: antiquewhite;
-}
-
-footer {
-    text-align: center;
-    background-color: antiquewhite;
-    height: 100px;
-}
-
-footer .terminos {
+  
+  
+  li {
     display: block;
-    text-align: left;
-    font-family: tahoma;
-    font-size: 15px;
-    padding: 0.5%;
-    margin-left: 10%;
-}
-
-footer .terminos {
-    text-decoration: none;
-    color: black;
-}
-
-footer .copy {
-    text-align: right;
-    font-family: tahoma;
-    font-size: 15px;
-    margin-bottom: 100px;
-    margin-top: -85px;
-    margin-right: 10%;
-    background-color: antiquewhite;
-}
-
-form {
-    padding: 60px;
-    max-width: 600px;
-    background-color: antiquewhite;
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-form input, form textarea, form select {
-    margin-bottom: 15px;
-    font-family: tahoma;
-    width: 100%;
+    background: antiquewhite;
+    margin: 0;
     padding: 10px;
-    box-sizing: border-box; 
-    border: none; 
-    color: #525c66; 
-    font-size: 1em;
-    resize: none; 
-}
-
-body section div .tostas {
-    margin-top: 15%;
-    font-family: Pacifico;
-    background-color: antiquewhite;
-    font-size: 25px;
-    padding: 1%;
-    margin-bottom: 5%;
-    margin-top: 7%;
-}
-
-body .deFloreDos div ul li {
-    padding-top: 2%;
-    margin-left: 1%;
-    font-family: tahoma;
-    font-size: 20px;
-    color: #a9aae8;
-    text-decoration: underline;
-    font-weight: bold;  
-}
-
-body .deFloreDos div ul p {
-    font-family: tahoma;
-    font-size: 20px;
-    text-align: justify;
-    margin-left: 1%;
-    margin-right: 1%;
-}
-
-
-body .torta p {
-    font-family: tahoma;
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    background-color: antiquewhite;
-    padding: 2%;
-}
-
-body .slider {
-    width: 100%;
-    height: 600%;
-    overflow: hidden;
-}
-
-body .slider ul {
-    display: flex;
-    animation: cambio 20s infinite alternate linear;
-    width: 100%;
-}
-
-body .slider ul li {
-    width: 100%;
     list-style: none;
+    border-bottom: 3px solid white;
+}
+  
+  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+
+  li:hover {
+    filter: brightness(110%);
+  }
+
+  a {
+    text-decoration: none;
+    color: black;  
+  }
+
+  a:hover {
+    color: #a9aae8;
+  }
+
+ .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px 900px 700px;
 }
 
-body .slider ul li img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 5px;
+.grid section .gusto-dos {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
 }
 
-@keyframes cambio {
-    0%{margin-left: 0%;}
-    20%{margin-left: 0%;}
-
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
+.grid section .gusto-dos h2 {
+    color: #a9aae8;
+    font-size: 80px;
+    margin-top: 50px;
 }
 
-body section .nos {
-    font-family: tahoma;
+.grid section div h2:hover {
+  text-shadow: white 5px 5px 15px, white 5px 5px 15px ;
+}
+
+
+.grid section div p {
+    width: 40%;
+    height: 30%;
     font-size: 20px;
     text-align: center;
-    margin-top: 15%;
-    background-color:antiquewhite;
-    padding: 1%;
-    margin-bottom: 5%;
-    margin-top: 7%;
+    border-radius: 10px;
+    margin-top: 80px;
+
 }
 
-body section div img {
-    width: 50%;
-    margin-left: 23%;
-    margin-top: 5%;
+.grid section .gusto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+
 }
+
+.grid section .gusto img {
+    width: 40%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+
+.grid section div .nuestro {
+    width: 40%;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.grid section .local {
+  display: flex;
+  justify-content: center;
+}
+
+main section .local img {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: antiquewhite;
+}
+
+.grid-footer .terminos-dos {
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+  margin-left: 80px;
+}
+
+.grid-footer .terminos-dos .terminos {
+  line-height: 30px;
+  font-size: 15px;
+}
+
+.grid-footer .terminos-dos .terminos:hover {
+  color: #a9aae8;
+}
+
+.grid-footer div p {
+  color: #a9aae8;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.grid-footer div .form {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.grid-footer .form input {
+  width: 50%;
+  height: 25px;
+  margin-top: 10px;
+}
+
+.grid-footer .form button {
+  width: 30%;
+  border-radius: 10px;
+  background-color: #a9aae8;
+  border-color: #a9aae8;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.grid-footer .copy-dos {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.grid-footer .copy-dos .copy {
+  color: #0e0e0e;
+}
+
+
+/* inicio menu */
+
+.grid-cinco {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 780px 620px;
+}
+
+.grid-cinco div h3 {
+    color:#a9aae8;
+}
+
+.grid-cinco div h5 {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.grid-cinco div p {
+  width: 90%;
+  font-size: 15px;
+  padding: 3px;
+  margin-left: 10px;
+}
+
+.grid-cinco div .papas {
+  text-align: center;
+  margin-left: 30px;
+  padding: 10px;
+}
+
+.grid-cinco div h3:hover {
+  text-shadow: white 5px 5px 15px, white 5px 5px 15px ;
+}
+
+/* inicio eventos */
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+    color: #a9aae8;
+    width: 80%;
+    margin-left: 140px;
+    margin-top: 50px;
+}
+
+h3:hover {
+  text-shadow: white 5px 5px 15px, white 5px 5px 15px ;
+}
+
+.grid-dos .fotos {
+    display: flex;
+    position: relative;
+    float: left;
+    height: auto;
+    width: 60%;
+}
+
+.grid-dos .fotos img {
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  transition: opacity 1.5s ease-in-out;
+  width: 70%;
+  height: auto;
+  margin-top: 100px;
+  margin-left: 150px;
+  
+}
+
+.grid-dos div .cambio:hover {
+  opacity: 0;
+}
+
+.grid-dos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 550px 500px 500px;
+}
+
+.grid-dos .fotos p {
+  margin-left: 40px;
+  font-size: 20px;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  
+}
+
+
+  /* inicio nosotros */
+
+ 
+ .nos .marcar {
+    color: #a9aae8;
+    font-size: 30px;
+ } 
+
+ .nos {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 25px;
+    width: 90%;
+    margin-left: 70px;
+ } 
+
+ .carrusel #carouselExampleSlidesOnly {
+  width: 50%;
+  margin-left: 150px;
+  margin-top: 40px;
+ }
+
+ .carrusel #carouselExampleSlidesOnly img {
+    border-radius: 20px;
+    
+ }
+
+ .carrusel {
+  display: flex;
+  justify-content: center;
+  
+ }
+
+ .nosDos {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 50px;
+ }
+
+ h4 {
+    margin-top: 100px;
+    text-align: center;
+    color: #a9aae8;
+    font-size: 35px;
+ }
+
+ .grid-tres {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+ }
+
+ .grid-tres div .sucursal {
+    font-size: 20px;
+    margin-top: 70px;
+    text-align: center;
+ }
+
+ .grid-tres div p {
+    text-align: center;
+    font-size: 20px;
+ }
+
+ /* inicio contacto */
+
+ h3 {
+    font-size: 60px;
+ }
+
+  h3:hover {
+  text-shadow: white 5px 5px 15px, white 5px 5px 15px ;
+}
+
+ .contact_form{  
+    width: 470px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px; 
+    
+  }
+  
+  
+  .input2{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: pink; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  .texto_mensaje {
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: pink; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  
+  .button-send{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: pink; 
+    border-color: pink; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  
+  
+  .text-button {
+    color: #fff; 
+  }
+  
+  
+  .aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+  }
+  
+  
+  .secciones-form {
+    font-size: 18px; 
+    color: #0e0e0e; 
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  .grid-cuatro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+  }
+
+  .grid-cuatro div p {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .grid-cuatro div .logos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .grid-cuatro div .logos img {
+    width: 40px;
+    margin-top: 8px;
+  }
+
+  .grid-cuatro div p a:hover {
+    color: #a9aae8;
+  }
+
+  /* RESPONSIVE MOBILE */
+
+/* INDEX */
+
+@media (max-width: 576px) {
+  .grid {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 700px 1000px 800px ;
+  }
+
+  .grid section .gusto-dos  {
+     display: flex;
+     flex-direction: column;
+  }
+
+  .grid section .gusto-dos h2 {
+     font-size: 90px;
+     margin-left: 20px;
+     text-shadow: white 5px 5px 15px, white 5px 5px 15px ;
+  }
+
+  .grid section .gusto {
+     column-gap: 20px;
+  }
+
+  .grid section .gusto-dos .flore {
+     text-align: center;
+
+  }
+
+  .grid section .gusto-dos p {
+     width: 500px;
+     font-size: 40px;
+     text-align: center;
+     margin-left: 40px;   
+     margin-top: -60px;
+  }
+  
+  .grid section .gusto img {
+     width: 250px;
+  }
+
+  .grid section .local img {
+     width: 400px;
+  }
+  
+  .grid-footer  {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 30px 40px 70px;
+  }
+
+  .grid-footer .terminos-dos {
+     display: flex;
+     flex-direction: row;
+  }
+
+  .grid-footer .terminos-dos .terminos {
+     text-align: center;
+  }
+
+  .grid-footer div p {
+     text-align: center;
+  }
+
+  .grid-footer div .form {
+     margin-left: 100px;
+  }
+
+  /* MENU */
+
+  .grid-cinco {
+     display: grid;
+     grid-template-columns: 540px;
+     grid-template-rows: auto ;
+  }
+
+  .grid-cinco div h3 {
+     text-shadow: white 5px 5px 15px, white 5px 5px 15px ;
+  }
+
+  .grid-cinco div .papas {
+     margin-left: 50px;
+     padding: 10px;
+  }
+
+}  
