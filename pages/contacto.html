@@ -20,71 +20,53 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <input class="input-menu" type="checkbox" id="menu">
+            <label class="menu" for="menu"> ☰ </label>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/menu.html">Menu</a></li>
+                <li><a href="../pages/eventos.html">Regala De Flore</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
-        <input class="input-menu" type="checkbox" id="menu">
-        <label class="menu" for="menu"> ☰ </label>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/menu.html">Menu</a></li>
-            <li><a href="../pages/eventos.html">Regala De Flore</a></li>
-            <li><a href="../pages/nosotros.html">Nosotros</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <h3>Para reservas o pedidos llena el formulario y nos pondremos en contacto</h3>
+    <h1 class="contacto">Para reservas o pedidos llena el formulario y nos pondremos en contacto</h1>
 
     <div class="contact_form">
 
-        <form action="submeter-formulario.php" method="post">
+        <form action="" method="">
 
-            <p class="secciones-form">
-                <label for="nombre" class="colocar_nombre">Nombre
-                    <span class="obligatorio">*</span>
-                </label>
+        
+                <label for="nombre" class="colocar_nombre">Nombre</label>
                 <input class="input2" type="text" name="introducir_nombre" id="nombre" required="obligatorio"
                     placeholder="Escribe tu nombre">
-            </p>
+            
 
-            <p class="secciones-form">
-                <label for="email" class="colocar_email">Email
-                    <span class="obligatorio">*</span>
+                <label for="email" class="colocar_email">Email<span class="obligatorio">
                 </label>
                 <input class="input2" type="email" name="introducir_email" id="email" required="obligatorio"
                     placeholder="Escribe tu Email">
-            </p>
 
-            <p class="secciones-form">
-                <label for="telefone" class="colocar_telefono">Teléfono
-                </label>
+                <label for="telefone" class="colocar_telefono">Teléfono</label>
                 <input class="input2" type="tel" name="introducir_telefono" id="telefono"
                     placeholder="Escribe tu teléfono">
-            </p>
+        
 
-            <p class="secciones-form">
-                <label for="asunto" class="colocar_asunto">Asunto
-                    <span class="obligatorio">*</span>
-                </label>
+                <label for="asunto" class="colocar_asunto">Asunto</label>
                 <input class="input2" type="text" name="introducir_asunto" id="assunto" required="obligatorio"
                     placeholder="Escribe un asunto">
-            </p>
 
-            <p class="secciones-form">
-                <label for="mensaje" class="colocar_mensaje">Mensaje
-                    <span class="obligatorio">*</span>
-                </label>
+
+                <label for="mensaje" class="colocar_mensaje">Mensaje</label>
                 <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
                     placeholder="Deja tu comentario ..."></textarea>
-            </p>
+            
 
-            <button class="button-send" type="submit" name="enviar_formulario" id="enviar">
-                <p class="text-button">Enviar</p>
-            </button>
-
-            <p class="aviso">
-                <span class="obligatorio"> * </span>los campos son obligatorios.
-            </p>
+            <button class="button-send" type="submit" name="enviar_formulario" id="enviar">Enviar formulario</button>
 
         </form>
     </div>
@@ -113,10 +95,7 @@
 
             <p>Dejanos tus datos y postulate a las busquedas activas</p>
 
-            <p>
-                
-                <strong><a href="">Forma parte del equipo De Flore</a></strong>
-            </p>
+            <a href="" class="equipo">Forma parte del equipo De Flore</a>
 
         </div>
 
