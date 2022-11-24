@@ -13,7 +13,6 @@ body {
     overflow-x: hidden;
 }
 
-
 ul {
     display: none;
 }
@@ -81,17 +80,21 @@ ul {
 
  .grid {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 600px 900px 700px;
+    grid-template-columns: repeat(12,1fr);
 }
 
-.grid section .gusto-dos {
+.grid section {
+  grid-column-start: 1;
+  grid-column-end: 13;
+
+}
+
+.grid section .gusto-dos, .grid section .gusto {
   display: flex;
-  justify-content: center;
-  gap: 100px;
+  justify-content: space-evenly;
 }
 
-.grid section .gusto-dos h1 {
+.grid .gusto-dos h1 {
     color: #a9aae8;
     font-size: 80px;
     margin-top: 50px;
@@ -109,14 +112,6 @@ ul {
     text-align: center;
     border-radius: 10px;
     margin-top: 80px;
-
-}
-
-.grid section .gusto {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 100px;
 
 }
 
@@ -144,20 +139,21 @@ main section .local img {
     width: 50%;
     height: auto;
     border-radius: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .grid-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: antiquewhite;
+  margin-top: 50px;
 }
 
 .grid-footer .terminos-dos {
   display: flex;
   flex-direction: column;
-  column-gap: 10px;
   margin-left: 80px;
+  justify-content: center;
 }
 
 .grid-footer .terminos-dos .terminos {
@@ -172,20 +168,21 @@ main section .local img {
 .grid-footer div p {
   color: #a9aae8;
   margin-top: 10px;
-  margin-left: 50px;
   font-size: 20px;
+  text-align: center;
 }
 
 .grid-footer div .form {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  justify-content: center;
 }
 
 .grid-footer .form input {
   width: 50%;
   height: 25px;
   margin-top: 10px;
+  
 }
 
 .grid-footer .form button {
@@ -195,12 +192,13 @@ main section .local img {
   border-color: #a9aae8;
   font-size: 15px;
   margin-top: 10px;
+  margin-left: 5px;
 }
 
 .grid-footer .copy-dos {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  align-items: center;
 }
 
 .grid-footer .copy-dos .copy {
@@ -214,7 +212,8 @@ main section .local img {
 .grid-cinco {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 780px 620px;
+    width: 90%;
+    margin: auto;
 }
 
 .grid-cinco div h1 {
@@ -461,7 +460,7 @@ main section .local img {
   .grid-cuatro div .logos {
     display: flex;
     justify-content: center;
-    gap: 10px;
+
   }
 
   .grid-cuatro div .logos img {
@@ -477,116 +476,69 @@ main section .local img {
 
 /* INDEX */
 
-@media (max-width: 786px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-    
-  body {
-    overflow-x: hidden;
-  }
+@media (max-width: 576px) {
 
-  .grid {
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: 1000px;
-  }
-
-  .grid section .gusto-dos  {
-     display: flex;
-     flex-direction: column;
-  }
-
-  .grid section .gusto-dos h1 {
-     font-size: 70px;
-     text-shadow: white 5px 5px 15px, white 5px 5px 15px;
-     text-align: center;
-  }
-
-  .grid section .gusto-dos p {
-    font-size: 25px;
-    text-align: center;
-    margin-top: -60px;
-    width: 90%;
-    margin-left: 30px;
- }
-
-  .grid section .gusto {
-     display: inline; 
-  }
-
-  .grid section .gusto img {
-    width: 60%;
-    height: auto;
-    margin-left: 150px;
- }
-
- .grid section .grid-dos .local {
+.grid section .gusto-dos {
   display: flex;
- }
+  flex-direction: column;
+}
 
-  .grid section .local img {
-     width: 60%;
-     margin-bottom: 40px;
-  }
+.grid section .gusto-dos p {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.grid section .gusto img {
+  width: 45%;
+  margin-top: 20px;
+}
+
+.grid section .gusto-dos h1 {
+  font-size: 50px;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-footer .terminos-dos {
+  margin: 0;
+}
+
+.grid-footer .terminos-dos .terminos {
+  text-align: center;
+}
+
+/* MENU */
+
+.grid-cinco {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-cinco div h1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+ 
+
   
-  .grid-footer  {
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: 50px 90px 70px;
-  }
-
-  .grid-footer .terminos-dos {
-     display: flex;
-     flex-direction: row;
-  }
-
-  .grid-footer .terminos-dos .terminos {
-    font-size: 20px;
-  }
-
-  .grid-footer div p {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .grid-footer div .form {
-    display: flex;
-    justify-content: center;
-  }
-
-  .grid-footer .copy-dos .copy {
-    font-size: 20px;
-    text-align: center;
-    margin-top: -10px;
-  }
-
-  /* MENU */
-
-  .grid-cinco {
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: auto ;
-  }
-
-  .grid-cinco div h1 {
-     text-shadow: white 5px 5px 15px, white 5px 5px 15px;
-     font-size: 50px;
-  }
-
-  .grid-cinco div h2 {
-    font-size: 30px;
-  }
-
-  .grid-cinco div p {
-    font-size: 20px;
-  }
-
-  .grid-cinco div .papas {
-     margin-left: 25px;
-     padding: 10px;
-  }
-
-}  
