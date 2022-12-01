@@ -1,0 +1,207 @@
+@mixin nosTres {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+@media (max-width: 576px) {
+    header {
+
+        img {
+            display: none;
+        }
+
+        nav {
+
+            .input-menu {
+
+                display: none;
+
+                &:checked~label {
+                    background-color: #faebd7;
+                }
+
+                &:checked~ul {
+                    display: block;
+                }
+            }
+
+            .menu {
+                box-sizing: border-box;
+                display: inline-block;
+                border: 3px solid #ffffff;
+                border-radius: 7px;
+                width: 60px;
+                line-height: 30px;
+                font-weight: bold;
+                text-align: center;
+                user-select: none;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+
+            ul {
+                display: none;
+                margin-top: 0;
+                padding: 0;
+                width: 200px;
+
+                li {
+                    display: block;
+                    background: #faebd7;
+                    margin: 0;
+                    padding: 10px;
+                    list-style: none;
+                    border-bottom: 3px solid #ffffff
+                }
+            }
+
+        }
+    }
+
+
+    .grid {
+
+        section {
+
+            .gusto-dos {
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    font-size: 50px;
+                    text-shadow: white 5px 5px 15px, white 5px 5px 15px;
+                }
+
+                p {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 10px;
+                    padding: 5px;
+                }
+            }
+
+            .gusto {
+                img {
+                    width: 45%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .grid-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .terminos-dos {
+            margin: 10px;
+
+            .terminos {
+                text-align: center;
+            }
+        }
+
+        div {
+            p {
+                text-align: center;
+            }
+
+            .form {
+                margin-left: 50px;
+            }
+        }
+
+        .copy-dos {
+            .copy {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .grid-cinco {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        div {
+
+            h1 {
+                margin-top: 50px;
+                margin-bottom: 20px;
+                text-shadow: white 5px 5px 15px, white 5px 5px 15px;
+            }
+        }
+    }
+
+    .tarjetas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        element.style {
+            width: 10rem;
+        }
+    }
+
+    .nos {
+        @include nosTres;
+    }
+
+    .carrusel {
+        #carouselExampleSlidesOnly {
+            width: 100%;
+        }
+    }
+
+    .nosDos {
+        @include nosTres;
+    }
+
+    h1 {
+        margin-bottom: 50px;
+    }
+
+    .grid-tres {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        div {
+            .sucursal {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .contacto {
+        font-size: 40px;
+    }
+
+    .contact_form {
+        padding-left: 10px;
+        width: 340px;
+        margin-top: 10px;
+
+        .input2 {
+            width: 320px;
+        }
+
+        .texto_mensaje {
+            width: 320px;
+        }
+
+        .button-send {
+            width: 320px;
+        }
+    }
+
+    .grid-cuatro {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

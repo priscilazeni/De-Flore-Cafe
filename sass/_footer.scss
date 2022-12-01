@@ -1,0 +1,64 @@
+.grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    background-color: #faebd7;
+    margin-top: 50px;
+
+    .terminos-dos {
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+
+        .terminos {
+            line-height: 30px;
+            font-size: $fuente-footer;
+            color: #0e0e0e;
+            text-decoration: none;
+
+            &:hover {
+                color: $lila;
+            }
+        }
+    }
+
+    div {
+
+        p {
+            color: $lila;
+            margin-top: 10px;
+            font-size: $fuente-parrafos;
+        }
+
+        .form {
+            @extend .local;
+            flex-direction: row;
+
+            input {
+                width: 50%;
+                height: 25px;
+                margin-top: 10px;
+            }
+
+            button {
+                width: 30%;
+                border-radius: 10px;
+                background-color: $lila;    
+                border-color: $lila;
+                font-size: $fuente-footer;
+                margin-top: 10px;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .copy-dos {
+        
+        .copy {
+            color: #0e0e0e;
+            font-size: $fuente-footer;
+            text-align: center;
+            margin-top: 40px;
+        }
+    }
+}

@@ -5,23 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De Flore Cafe</title>
+    <meta name="description" content="Encontra ese momento ideal para hace una pausa y disfrutar de la comida mas rica">
+    <meta name="keywords" content="Restaurant, Comida, Regalos, Compartir">
+    <title>Home | De Flore Cafe</title>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&family=Dancing+Script:wght@600&family=Jost:wght@300&family=Montserrat:ital,wght@1,200&family=Open+Sans:ital@1&family=Pacifico&family=Raleway:wght@200&family=Roboto:ital,wght@0,300;1,400&display=swap"
         rel="stylesheet">
-    <!--logo en el buscador-->
+    <!--logo-->
     <link rel="shortcut icon" href="./multimedia/logo.png">
-    <!--CSS-->
-    <link rel="stylesheet" href="style.css">
+    <!--SASS CSS-->
+    <link rel="stylesheet" href="./sass/main.css">
 
 </head>
 
 <body>
 
     <header>
+        <img src="./multimedia/logo.png" alt="logo">
         <nav>
             <input class="input-menu" type="checkbox" id="menu">
             <label class="menu" for="menu"> ☰ </label>
@@ -48,8 +51,8 @@
             </div>
 
             <div class="gusto">
-                <img src="./multimedia/papas-fritas.jpeg" alt="comida" class="salado">
-                <img src="./multimedia/frutillas.jpg" alt="postre" class="salado-dos">
+                <img class="fritas" src="./multimedia/papas-fritas.jpeg" alt="comida" class="salado">
+                <img class="frutillas" src="./multimedia/frutillas.jpg" alt="postre" class="salado-dos">
             </div>
 
 
@@ -67,8 +70,8 @@
             </div>
 
             <div class="gusto">
-                <img src="./multimedia/box.jpg" alt="box">
-                <img src="./multimedia/box-dos.jpg" alt="box-dos">
+                <img class="fritas" src="./multimedia/box.jpg" alt="box">
+                <img class="frutillas" src="./multimedia/box-dos.jpg" alt="box-dos">
             </div>
 
         </section>
@@ -101,7 +104,7 @@
 
         <div>
 
-            <p>Suscribite y recibi todas las novedades</p>
+            <p><strong>Suscribite y recibi todas las novedades</strong></p>
 
             <form action="" class="form">
                 <input type="email" name="suscribite" id="suscribite" placeholder="Ingresa tu email">

@@ -1,0 +1,163 @@
+/* INDEX */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    section {
+        grid-column-start: 1;
+        grid-column-end: 13;
+
+        .gusto,
+        .gusto-dos {
+            display: flex;
+            justify-content: space-evenly;
+
+            h1 {
+                color: $lila;
+                font-size: $fuente-titulos;
+                margin-top: 70px;
+
+                &:hover {
+                    text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px;
+                }
+            }
+
+            p {
+                width: 35%;
+                font-size: $fuente-parrafos;
+                text-align: center;
+                border-radius: 10px;
+                margin-top: 90px;
+            }
+
+            img {
+                width: 40%;
+                height: auto;
+                border-radius: 20px;
+                margin-top: 50px;
+            }
+        }
+
+        .nuestro {
+            width: 40%;
+            font-size: $fuente-parrafos;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .local {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 45%;
+                height: auto;
+                border-radius: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+/* MENU */
+
+.grid-cinco {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: auto;
+
+    div {
+
+        h1 {
+            color: $lila;
+            font-size: $fuente-titulos;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            text-align: center;
+
+            &:hover {
+                text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px ;
+              }
+        }
+
+        .papas {
+            text-align: center;
+            margin-left: 30px;
+            padding: 10px;
+        }
+
+        h2 {
+            font-size: $fuente-parrafos;
+            margin-left: 10px;
+        }
+
+        p {
+            width: 90%;
+            font-size: $fuente-footer;
+            padding: 3px;
+            margin-left: 5px;
+        }
+
+        img {
+            width: 70%;
+        }
+    }
+}
+
+/* NOSOTROS */
+
+.grid-tres {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 130px;
+
+    div {
+        .sucursal {
+            font-size: $fuente-parrafos;
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: $fuente-parrafos;
+        } 
+    }
+}
+
+/* CONTACTO */
+
+.grid-cuatro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+
+    div {
+        p {
+            font-size: 18px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: center;
+            
+            img {
+                width: 40px;
+                margin-top: 8px;
+                padding: 3px;
+              }
+        }
+
+        .equipo {
+            font-size: 18px;
+            width: 100%;
+            margin-left: 100px;
+            color: $lila;
+            text-decoration: none;
+        }
+    }
+}

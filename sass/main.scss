@@ -1,0 +1,172 @@
+@import "_vars";
+@import "_header";
+@import "_footer";
+@import "_grid";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient($rosa, #faebd7, $rosa);
+    font-family: Jost;
+    overflow-x: hidden;
+}
+
+/* EVENTOS */
+
+.eventos {
+    font-size: $fuente-titulos;
+    text-align: center;
+    color: $lila;
+    padding: 20px;
+    margin-top: 50px;
+
+    &:hover {
+        text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px;
+    }
+}
+
+.tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .card {
+        margin-top: 50px;
+        height: 50%;
+    }
+
+    .card-body {
+
+        .card-text {
+            text-align: center;
+            background-color: #faebd7;
+            border-radius: 10px;
+        }
+    }
+}
+
+/* NOSOTROS */
+
+.nos {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 25px;
+    width: 90%;
+    margin-left: 70px;
+
+    .flore {
+        color: $lila;
+    }
+}
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    margin-left: 80px;
+    margin-top: 40px;
+
+    #carouselExampleSlidesOnly {
+        width: 40%;
+        
+        img {
+            border-radius: 20px;
+        }
+    }
+}
+
+.nosDos {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 50px;
+}
+
+h1 {
+    margin-top: 100px;
+    text-align: center;
+    color: $lila;
+    font-size: 35px;
+    margin-top: 60px;
+}
+
+/* CONTACTO */
+
+.contacto {
+    font-size: $fuente-titulos;
+    padding: 20PX;
+
+    &:hover {
+        text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px;
+    }
+}
+
+.contact_form {
+    width: 470px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    padding-left: 30px;
+
+    .input2 {
+        background-color: #ffffff;
+        width: 408px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: $rosa;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .texto_mensaje {
+        background-color: #fbfbfb;
+        width: 405px;
+        height: 150px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: $rosa;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+    }
+
+    label {
+        display: block;
+        float: center;
+    }
+
+    .button-send {
+        height: 45px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        background-color: $rosa;
+        border-color: $rosa;
+        border-style: solid;
+        border-radius: 10px;
+        width: 420px;
+        cursor: pointer;
+    }
+
+    .text-button {
+        color: #fff;
+    }
+
+}
+
+@import "_responsive";

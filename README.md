@@ -1,2 +1,2 @@
-De Flore Cafe nace como mi primer proyecto de desarrollo web, el cual trata sobre una cafeteria. En las paginas podran encontrar los servicios que se ofrecen, su menu, las sucursales, pagina de contacto tanto para reservas o pedidos y la historia del mismo.  
-El proyecto todavia esta en estado de proceso, las vistas mobile solo son las dos principales, las mismas las ire desarrollando durante las pre-entregas, al igual que el diseño. 
+De Flore Cafe nace como mi primer proyecto de desarrollo web, el cual trata sobre una cafeteria. En las paginas podran encontrar los servicios que se ofrecen, su menu, las sucursales, pagina de contacto tanto para reservas o pedidos y la historia del mismo. 
+La pagina cuenta con un index y cuatro secciones, en las mismas utilice flexbox y grid para el maquetado, sass y css para el diseño, y bootstrap.
