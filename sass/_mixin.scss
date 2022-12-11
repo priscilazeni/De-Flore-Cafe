@@ -1,0 +1,10 @@
+@mixin nosTres {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+@mixin grid-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+}

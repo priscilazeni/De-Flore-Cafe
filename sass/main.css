@@ -1,7 +1,7 @@
 header {
-  display: flex;
-  justify-content: flex-start;
   background-color: #faebd7;
+  display: flex;
+  flex-direction: row;
 }
 header img {
   width: 10%;
@@ -13,6 +13,7 @@ header nav label {
 header nav ul {
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
 }
 header nav ul li {
   padding: 5px;
@@ -25,58 +26,55 @@ header nav ul li a {
   font-size: 20px;
 }
 header nav ul li a:hover {
-  text-decoration: underline;
   color: #a9aae8;
+  font-weight: bold;
 }
 
-.grid-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px;
-  background-color: #faebd7;
-  margin-top: 50px;
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: antiquewhite;
 }
-.grid-footer .terminos-dos {
+footer .terminos-dos {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin-left: 80px;
+  align-items: center;
+  margin-top: 10px;
 }
-.grid-footer .terminos-dos .terminos {
-  line-height: 30px;
-  font-size: 15px;
-  color: #0e0e0e;
+footer .terminos-dos .terminos {
   text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  line-height: 28px;
 }
-.grid-footer .terminos-dos .terminos:hover {
+footer .terminos-dos .terminos:hover {
   color: #a9aae8;
+  font-weight: bold;
 }
-.grid-footer div p {
-  color: #a9aae8;
+footer .medios-pago .medios-dos {
+  font-size: 16px;
+  text-align: center;
   margin-top: 10px;
-  font-size: 20px;
 }
-.grid-footer div .form {
+footer .medios-pago .medios-tres {
+  width: 100%;
+  display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
-.grid-footer div .form input {
-  width: 50%;
-  height: 25px;
+footer .medios-pago .medios-tres img {
+  width: 15%;
   margin-top: 10px;
 }
-.grid-footer div .form button {
-  width: 30%;
-  border-radius: 10px;
-  background-color: #a9aae8;
-  border-color: #a9aae8;
-  font-size: 15px;
-  margin-top: 10px;
-  margin-left: 5px;
+footer .copy-dos {
+  width: 100%;
 }
-.grid-footer .copy-dos .copy {
-  color: #0e0e0e;
-  font-size: 15px;
+footer .copy-dos .copy {
   text-align: center;
   margin-top: 40px;
+  margin-right: 10px;
+  font-size: 16px;
 }
 
 /* INDEX */
@@ -101,46 +99,46 @@ header nav ul li a:hover {
 }
 .grid section .gusto h1:hover,
 .grid section .gusto-dos h1:hover {
-  text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px;
+  text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px, #ffffff 5px 5px 15px;
 }
-.grid section .gusto p,
-.grid section .gusto-dos p {
+.grid section p {
   width: 35%;
   font-size: 20px;
   text-align: center;
   border-radius: 10px;
   margin-top: 90px;
 }
-.grid section .gusto img,
-.grid section .gusto-dos img {
+.grid section img {
   width: 40%;
   height: auto;
   border-radius: 20px;
   margin-top: 50px;
 }
-.grid section .nuestro {
+.grid .nuestro {
   width: 40%;
   font-size: 20px;
   text-align: center;
   margin-bottom: 50px;
 }
-.grid section .local, .grid section .grid-footer div .form, .grid-footer div .grid section .form {
+.grid .local {
   display: flex;
   justify-content: center;
 }
-.grid section .local img, .grid section .grid-footer div .form img, .grid-footer div .grid section .form img {
+.grid .local img {
   width: 45%;
   height: auto;
   border-radius: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* MENU */
 .grid-cinco {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 90%;
+  width: 100%;
   margin: auto;
+  background-image: url(../multimedia/fondo.jpg);
 }
 .grid-cinco div h1 {
   color: #a9aae8;
@@ -150,7 +148,7 @@ header nav ul li a:hover {
   text-align: center;
 }
 .grid-cinco div h1:hover {
-  text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px;
+  text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px, #ffffff 5px 5px 15px;
 }
 .grid-cinco div .papas {
   text-align: center;
@@ -163,7 +161,7 @@ header nav ul li a:hover {
 }
 .grid-cinco div p {
   width: 90%;
-  font-size: 15px;
+  font-size: 16px;
   padding: 3px;
   margin-left: 5px;
 }
@@ -175,7 +173,7 @@ header nav ul li a:hover {
 .grid-tres {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 130px;
+  grid-template-rows: 200px;
 }
 .grid-tres div .sucursal {
   font-size: 20px;
@@ -226,6 +224,41 @@ body {
   font-family: Jost;
   overflow-x: hidden;
 }
+body .suscribite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .suscribite p {
+  font-size: 30px;
+  color: #a9aae8;
+  margin-top: 50px;
+}
+body .suscribite p:hover {
+  text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px, #ffffff 5px 5px 15px;
+}
+body .suscribite .form {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+body .suscribite .form #suscribite-dos {
+  width: 25%;
+  border-radius: 10px;
+  border-color: #ffffff;
+}
+body .suscribite .form button {
+  width: 10%;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #a9aae8;
+  border-color: #a9aae8;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-left: 10px;
+}
 
 /* EVENTOS */
 .eventos {
@@ -234,9 +267,10 @@ body {
   color: #a9aae8;
   padding: 20px;
   margin-top: 50px;
+  font-weight: bold;
 }
 .eventos:hover {
-  text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px;
+  text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px, #ffffff 5px 5px 15px;
 }
 
 .tarjetas {
@@ -248,10 +282,8 @@ body {
   margin-top: 50px;
   height: 50%;
 }
-.tarjetas .card-body .card-text {
-  text-align: center;
-  background-color: #faebd7;
-  border-radius: 10px;
+.tarjetas .card-body .btn {
+  background-color: antiquewhite;
 }
 
 /* NOSOTROS */
@@ -269,14 +301,10 @@ body {
 .carrusel {
   display: flex;
   justify-content: center;
-  margin-left: 80px;
   margin-top: 40px;
 }
-.carrusel #carouselExampleSlidesOnly {
+.carrusel #carouselExampleIndicators {
   width: 40%;
-}
-.carrusel #carouselExampleSlidesOnly img {
-  border-radius: 20px;
 }
 
 .nosDos {
@@ -294,6 +322,9 @@ h1 {
   font-size: 35px;
   margin-top: 60px;
 }
+h1:hover {
+  text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px, #ffffff 5px 5px 15px;
+}
 
 /* CONTACTO */
 .contacto {
@@ -301,7 +332,7 @@ h1 {
   padding: 20PX;
 }
 .contacto:hover {
-  text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px;
+  text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px, #ffffff 5px 5px 15px;
 }
 
 .contact_form {
@@ -327,7 +358,7 @@ h1 {
   margin-bottom: 20px;
 }
 .contact_form .texto_mensaje {
-  background-color: #fbfbfb;
+  background-color: #ffffff;
   width: 405px;
   height: 150px;
   border-radius: 5px;
@@ -358,7 +389,7 @@ h1 {
   cursor: pointer;
 }
 .contact_form .text-button {
-  color: #fff;
+  color: #ffffff;
 }
 
 @media (max-width: 576px) {
@@ -402,7 +433,6 @@ h1 {
     margin: 0;
     padding: 10px;
     list-style: none;
-    border-bottom: 3px solid #ffffff;
   }
   .grid section .gusto-dos {
     display: flex;
@@ -410,7 +440,6 @@ h1 {
   }
   .grid section .gusto-dos h1 {
     font-size: 50px;
-    text-shadow: white 5px 5px 15px, white 5px 5px 15px;
   }
   .grid section .gusto-dos p {
     width: 100%;
@@ -422,23 +451,33 @@ h1 {
     width: 45%;
     margin-top: 20px;
   }
-  .grid-footer {
-    display: grid;
-    grid-template-columns: 1fr;
+  .grid section .local img {
+    width: 60%;
+    margin-top: 5px;
   }
-  .grid-footer .terminos-dos {
-    margin: 10px;
-  }
-  .grid-footer .terminos-dos .terminos {
+  .suscribite p {
     text-align: center;
   }
-  .grid-footer div p {
+  .suscribite .form #suscribite-dos {
+    width: 100%;
+  }
+  .suscribite .form button {
+    width: auto;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .terminos-dos .terminos {
     text-align: center;
   }
-  .grid-footer div .form {
+  footer div p {
+    text-align: center;
+  }
+  footer div .form {
     margin-left: 50px;
   }
-  .grid-footer .copy-dos .copy {
+  footer .copy-dos .copy {
     margin-top: 15px;
   }
   .grid-cinco {
@@ -448,7 +487,10 @@ h1 {
   .grid-cinco div h1 {
     margin-top: 50px;
     margin-bottom: 20px;
-    text-shadow: white 5px 5px 15px, white 5px 5px 15px;
+    text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px, #ffffff 5px 5px 15px;
+  }
+  .eventos {
+    font-weight: bold;
   }
   .tarjetas {
     display: flex;
@@ -467,8 +509,8 @@ h1 {
     width: 100%;
     padding: 10px;
   }
-  .carrusel #carouselExampleSlidesOnly {
-    width: 100%;
+  .carrusel #carouselExampleIndicators {
+    width: 80%;
   }
   .nosDos {
     margin-left: 0;
@@ -485,6 +527,8 @@ h1 {
   }
   .grid-tres div .sucursal {
     margin-top: 0;
+    color: #a9aae8;
+    font-weight: bold;
   }
   .contacto {
     font-size: 40px;
@@ -506,5 +550,6 @@ h1 {
   .grid-cuatro {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 80px 100px 80px;
   }
 }/*# sourceMappingURL=main.css.map */

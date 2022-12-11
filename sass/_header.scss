@@ -1,7 +1,7 @@
 header {
-    display: flex;
-    justify-content: flex-start;
     background-color: #faebd7;
+    display: flex;
+    flex-direction: row;
 
     img {
         width: 10%;
@@ -17,6 +17,7 @@ header {
         ul {
             display: flex;
             flex-direction: row;
+            margin-top: 10px;
 
             li {
                 padding: 5px;
@@ -29,9 +30,9 @@ header {
                     font-size: $fuente-parrafos;
 
                     &:hover {
-                        text-decoration: underline;
                         color: $lila;
-                      }
+                        font-weight: bold;
+                    }
                 }
             }
         }

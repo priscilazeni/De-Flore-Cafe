@@ -19,54 +19,58 @@
                 margin-top: 70px;
 
                 &:hover {
-                    text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px;
+                    text-shadow: $blanco 5px 5px 15px, $blanco 5px 5px 15px, $blanco 5px 5px 15px;
                 }
             }
 
-            p {
-                width: 35%;
-                font-size: $fuente-parrafos;
-                text-align: center;
-                border-radius: 10px;
-                margin-top: 90px;
-            }
-
-            img {
-                width: 40%;
-                height: auto;
-                border-radius: 20px;
-                margin-top: 50px;
-            }
         }
 
-        .nuestro {
-            width: 40%;
+        p {
+            width: 35%;
             font-size: $fuente-parrafos;
             text-align: center;
-            margin-bottom: 50px;
+            border-radius: 10px;
+            margin-top: 90px;
         }
 
-        .local {
-            display: flex;
-            justify-content: center;
+        img {
+            width: 40%;
+            height: auto;
+            border-radius: 20px;
+            margin-top: 50px;
+        }
+    }
 
-            img {
-                width: 45%;
-                height: auto;
-                border-radius: 20px;
-                margin-top: 20px;
-            }
+    .nuestro {
+        width: 40%;
+        font-size: $fuente-parrafos;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .local {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 45%;
+            height: auto;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 }
+
 
 /* MENU */
 
 .grid-cinco {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 90%;
+    width: 100%;
     margin: auto;
+    background-image: url(../multimedia/fondo.jpg);
 
     div {
 
@@ -78,8 +82,9 @@
             text-align: center;
 
             &:hover {
-                text-shadow: #ffffff 5px 5px 15px, #ffffff 5px 5px 15px ;
-              }
+                text-shadow: $blanco 5px 5px 15px, $blanco 5px 5px 15px, $blanco 5px 5px 15px;
+
+            }
         }
 
         .papas {
@@ -111,7 +116,7 @@
 .grid-tres {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 130px;
+    grid-template-rows: 200px;
 
     div {
         .sucursal {
@@ -123,7 +128,7 @@
         p {
             text-align: center;
             font-size: $fuente-parrafos;
-        } 
+        }
     }
 }
 
@@ -144,12 +149,12 @@
         .logos {
             display: flex;
             justify-content: center;
-            
+
             img {
                 width: 40px;
                 margin-top: 8px;
                 padding: 3px;
-              }
+            }
         }
 
         .equipo {
