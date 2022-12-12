@@ -89,22 +89,26 @@
         }
     }
 
-    .suscribite {
+    body {
 
-        p {
-            text-align: center;
-        }
+        .suscribite {
 
-        .form {
-
-            #suscribite-dos {
-                width: 100%;
+            p {
+                text-align: center;
             }
 
-            button {
-                width: auto;
+            .form {
+
+                #suscribite-dos {
+                    width: auto;
+                }
+
+                button {
+                    width: auto;
+                }
             }
         }
+
     }
 
     footer {
@@ -156,6 +160,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 20px;
 
         .card {
             width: 100%;
@@ -187,7 +192,7 @@
 
     .grid-tres {
         @include grid-footer;
-        grid-template-rows: auto;
+        grid-template-rows: 100px 100px 120px;
 
         div {
             .sucursal {

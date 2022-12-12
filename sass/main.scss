@@ -5,6 +5,8 @@
 @import "_mixin";
 
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -42,6 +44,7 @@ body {
                 width: 25%;
                 border-radius: 10px;
                 border-color: $blanco;
+                padding-left: 10px;
             }
 
             button {
@@ -79,6 +82,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-bottom: 30px;
 
     .card {
         margin-top: 50px;

@@ -248,6 +248,7 @@ body .suscribite .form #suscribite-dos {
   width: 25%;
   border-radius: 10px;
   border-color: #ffffff;
+  padding-left: 10px;
 }
 body .suscribite .form button {
   width: 10%;
@@ -277,6 +278,7 @@ body .suscribite .form button {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 30px;
 }
 .tarjetas .card {
   margin-top: 50px;
@@ -455,13 +457,13 @@ h1:hover {
     width: 60%;
     margin-top: 5px;
   }
-  .suscribite p {
+  body .suscribite p {
     text-align: center;
   }
-  .suscribite .form #suscribite-dos {
-    width: 100%;
+  body .suscribite .form #suscribite-dos {
+    width: auto;
   }
-  .suscribite .form button {
+  body .suscribite .form button {
     width: auto;
   }
   footer {
@@ -496,6 +498,7 @@ h1:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
   }
   .tarjetas .card {
     width: 100%;
@@ -523,7 +526,7 @@ h1:hover {
   .grid-tres {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 100px 100px 120px;
   }
   .grid-tres div .sucursal {
     margin-top: 0;
